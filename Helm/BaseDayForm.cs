@@ -12,14 +12,23 @@ namespace Helm
 {
     public partial class BaseDayForm : Form
     {
+
+        Reminders remindersForm;
+
         public BaseDayForm()
         {
             InitializeComponent();
+            remindersForm = new Reminders();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void createReminderButton_Click(object sender, EventArgs e)
+        {
+            remindersForm.Show();
         }
     }
 }

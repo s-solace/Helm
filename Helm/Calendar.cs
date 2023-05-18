@@ -10,7 +10,6 @@ namespace Helm
 
         StringDictionary dayDictionary = new StringDictionary();
 
-
         public Calendar()
         {
 
@@ -29,7 +28,7 @@ namespace Helm
             InitializeComponent();
         }
 
-        private void Calendar_Load(object sender, EventArgs e)
+        private static void Calendar_Load(object sender, EventArgs e)
         {
 
         }
@@ -38,12 +37,13 @@ namespace Helm
         {
             var baseDayForm = new BaseDayForm();
             baseDayForm.Show();
-            // plwAW HWLP MW
+            
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void ResourcesButton_Click(object sender, EventArgs e)
         {
-
+            var resourceFrom = new ResourcesForm();
+            resourceFrom.Show();
         }
     }
 }

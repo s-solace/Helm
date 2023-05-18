@@ -161,7 +161,7 @@
             resourcesButton.TabIndex = 2;
             resourcesButton.Text = "Resources";
             resourcesButton.UseVisualStyleBackColor = true;
-            resourcesButton.Click += button3_Click;
+            resourcesButton.Click += ResourcesButton_Click;
             // 
             // button2
             // 

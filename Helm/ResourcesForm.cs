@@ -21,5 +21,10 @@ namespace Helm
         {
 
         }
+
+        private void amadorWebsiteLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

@@ -45,7 +45,10 @@
             p1Text = new TextBox();
             tableLayoutPanel1 = new TableLayoutPanel();
             remindersLabel = new Label();
-            textBox1 = new TextBox();
+            createReminderButton = new Button();
+            timeLabel = new Label();
+            remindersListBox = new ListBox();
+            timeListBox = new ListBox();
             HWPanel.SuspendLayout();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
@@ -238,10 +241,13 @@
             // tableLayoutPanel1
             // 
             tableLayoutPanel1.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-            tableLayoutPanel1.ColumnCount = 1;
-            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tableLayoutPanel1.ColumnCount = 2;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 87F));
+            tableLayoutPanel1.Controls.Add(timeListBox, 1, 1);
             tableLayoutPanel1.Controls.Add(remindersLabel, 0, 0);
-            tableLayoutPanel1.Controls.Add(textBox1, 0, 1);
+            tableLayoutPanel1.Controls.Add(timeLabel, 1, 0);
+            tableLayoutPanel1.Controls.Add(remindersListBox, 0, 1);
             tableLayoutPanel1.Location = new Point(598, 34);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 2;
@@ -255,27 +261,62 @@
             remindersLabel.Anchor = AnchorStyles.None;
             remindersLabel.AutoSize = true;
             remindersLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            remindersLabel.Location = new Point(100, 7);
+            remindersLabel.Location = new Point(56, 7);
             remindersLabel.Name = "remindersLabel";
             remindersLabel.Size = new Size(85, 21);
             remindersLabel.TabIndex = 0;
             remindersLabel.Text = "Reminders";
             remindersLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // createReminderButton
             // 
-            textBox1.Dock = DockStyle.Fill;
-            textBox1.Location = new Point(4, 39);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(278, 156);
-            textBox1.TabIndex = 1;
+            createReminderButton.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            createReminderButton.Location = new Point(647, 298);
+            createReminderButton.Name = "createReminderButton";
+            createReminderButton.Size = new Size(193, 71);
+            createReminderButton.TabIndex = 3;
+            createReminderButton.Text = "Create Reminder";
+            createReminderButton.UseVisualStyleBackColor = true;
+            createReminderButton.Click += createReminderButton_Click;
+            // 
+            // timeLabel
+            // 
+            timeLabel.Anchor = AnchorStyles.None;
+            timeLabel.AutoSize = true;
+            timeLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            timeLabel.Location = new Point(219, 7);
+            timeLabel.Name = "timeLabel";
+            timeLabel.Size = new Size(44, 21);
+            timeLabel.TabIndex = 1;
+            timeLabel.Text = "Time";
+            timeLabel.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // remindersListBox
+            // 
+            remindersListBox.Dock = DockStyle.Fill;
+            remindersListBox.FormattingEnabled = true;
+            remindersListBox.ItemHeight = 15;
+            remindersListBox.Location = new Point(4, 39);
+            remindersListBox.Name = "remindersListBox";
+            remindersListBox.Size = new Size(190, 156);
+            remindersListBox.TabIndex = 2;
+            // 
+            // timeListBox
+            // 
+            timeListBox.Dock = DockStyle.Fill;
+            timeListBox.FormattingEnabled = true;
+            timeListBox.ItemHeight = 15;
+            timeListBox.Location = new Point(201, 39);
+            timeListBox.Name = "timeListBox";
+            timeListBox.Size = new Size(81, 156);
+            timeListBox.TabIndex = 3;
             // 
             // BaseDayForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(925, 450);
+            Controls.Add(createReminderButton);
             Controls.Add(tableLayoutPanel1);
             Controls.Add(HWPanel);
             Name = "BaseDayForm";
@@ -305,6 +346,9 @@
         private TextBox p2Text;
         private TableLayoutPanel tableLayoutPanel1;
         private Label remindersLabel;
-        private TextBox textBox1;
+        private ListBox timeListBox;
+        private Label timeLabel;
+        private ListBox remindersListBox;
+        private Button createReminderButton;
     }
 }
