@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
             label1 = new Label();
             panel1 = new Panel();
-            button3 = new Button();
+            resourcesButton = new Button();
             button2 = new Button();
             button1 = new Button();
             label2 = new Label();
@@ -145,22 +145,23 @@
             // panel1
             // 
             panel1.BackColor = SystemColors.ButtonShadow;
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(resourcesButton);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Location = new Point(7, 87);
             panel1.Name = "panel1";
-            panel1.Size = new Size(128, 248);
+            panel1.Size = new Size(128, 135);
             panel1.TabIndex = 1;
             // 
-            // button3
+            // resourcesButton
             // 
-            button3.Location = new Point(0, 85);
-            button3.Name = "button3";
-            button3.Size = new Size(128, 47);
-            button3.TabIndex = 2;
-            button3.Text = "Resources";
-            button3.UseVisualStyleBackColor = true;
+            resourcesButton.Location = new Point(0, 85);
+            resourcesButton.Name = "resourcesButton";
+            resourcesButton.Size = new Size(128, 47);
+            resourcesButton.TabIndex = 2;
+            resourcesButton.Text = "Resources";
+            resourcesButton.UseVisualStyleBackColor = true;
+            resourcesButton.Click += button3_Click;
             // 
             // button2
             // 
@@ -1071,7 +1072,7 @@
 
         private Label label1;
         private Panel panel1;
-        private Button button3;
+        private Button resourcesButton;
         private Button button2;
         private Button button1;
         private Label label2;

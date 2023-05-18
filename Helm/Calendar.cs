@@ -8,14 +8,14 @@ namespace Helm
 
         private Button[] days = new Button[31];
 
-        StringDictionary myDictionary = new StringDictionary();
+        StringDictionary dayDictionary = new StringDictionary();
 
 
         public Calendar()
         {
 
             #region JSON Dictionary
-            string json = JsonConvert.SerializeObject(myDictionary);
+            string json = JsonConvert.SerializeObject(dayDictionary);
             Properties.Settings.Default.MyStringDictionary = json;
             Properties.Settings.Default.Save();
             #endregion
@@ -23,7 +23,7 @@ namespace Helm
             /*  use this to retrieve JSON to a String Dictionary:
              *  
              *  string json = Properties.Settings.Default.MyStringDictionary;
-             *  StringDictionary myDictionary = JsonConvert.DeserializeObject<StringDictionary>(json);
+             *  StringDictionary dayDictionary = JsonConvert.DeserializeObject<StringDictionary>(json);
              */
 
             InitializeComponent();
@@ -38,6 +38,12 @@ namespace Helm
         {
             var baseDayForm = new BaseDayForm();
             baseDayForm.Show();
+            // plwAW HWLP MW
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
