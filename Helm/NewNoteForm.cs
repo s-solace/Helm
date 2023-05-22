@@ -19,7 +19,7 @@ namespace Helm
 
         private void saveNoteButton_Click(object sender, EventArgs e)
         {
-            var n = new Note(noteNameTextBox.Text, noteText.Text);
+            var n = new Note(noteNameTextBox.Text, noteText.Text); 
         }
     }
 }
