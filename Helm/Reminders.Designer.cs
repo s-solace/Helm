@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             label1 = new Label();
             reminderNameEntry = new TextBox();
             reminderDatePicker = new DateTimePicker();
             label2 = new Label();
             label3 = new Label();
             reminderTimePicker = new DateTimePicker();
+            setReminderButton = new Button();
+            notifyIcon1 = new NotifyIcon(components);
             SuspendLayout();
             // 
             // label1
@@ -87,20 +90,39 @@
             // reminderTimePicker
             // 
             reminderTimePicker.CustomFormat = "";
+            reminderTimePicker.Format = DateTimePickerFormat.Time;
             reminderTimePicker.ImeMode = ImeMode.On;
             reminderTimePicker.Location = new Point(47, 294);
             reminderTimePicker.MinDate = new DateTime(2023, 5, 18, 0, 0, 0, 0);
             reminderTimePicker.Name = "reminderTimePicker";
+            reminderTimePicker.ShowCheckBox = true;
+            reminderTimePicker.ShowUpDown = true;
             reminderTimePicker.Size = new Size(188, 23);
             reminderTimePicker.TabIndex = 4;
             reminderTimePicker.Value = new DateTime(2023, 5, 18, 15, 0, 0, 0);
             reminderTimePicker.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // setReminderButton
+            // 
+            setReminderButton.Location = new Point(476, 291);
+            setReminderButton.Name = "setReminderButton";
+            setReminderButton.Size = new Size(163, 48);
+            setReminderButton.TabIndex = 6;
+            setReminderButton.Text = "Set Reminder";
+            setReminderButton.UseVisualStyleBackColor = true;
+            setReminderButton.Click += setReminderButton_Click;
+            // 
+            // notifyIcon1
+            // 
+            notifyIcon1.Text = "notifyIcon1";
+            notifyIcon1.Visible = true;
             // 
             // Reminders
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(setReminderButton);
             Controls.Add(label3);
             Controls.Add(reminderTimePicker);
             Controls.Add(label2);
@@ -122,5 +144,7 @@
         private Label label2;
         private Label label3;
         private DateTimePicker reminderTimePicker;
+        private Button setReminderButton;
+        private NotifyIcon notifyIcon1;
     }
 }

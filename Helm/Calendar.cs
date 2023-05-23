@@ -37,7 +37,7 @@ namespace Helm
         {
             var baseDayForm = new BaseDayForm();
             baseDayForm.Show();
-            
+
         }
 
         private void ResourcesButton_Click(object sender, EventArgs e)

@@ -136,7 +136,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("ROG Fonts", 45F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(468, 9);
+            label1.Location = new Point(468, 8);
             label1.Name = "label1";
             label1.Size = new Size(234, 72);
             label1.TabIndex = 0;
@@ -148,44 +148,47 @@
             panel1.Controls.Add(resourcesButton);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(7, 87);
+            panel1.Location = new Point(7, 81);
             panel1.Name = "panel1";
-            panel1.Size = new Size(128, 135);
+            panel1.Size = new Size(128, 126);
             panel1.TabIndex = 1;
             // 
             // resourcesButton
             // 
-            resourcesButton.Location = new Point(0, 85);
+            resourcesButton.BackColor = Color.FromArgb(235, 240, 163);
+            resourcesButton.Location = new Point(0, 79);
             resourcesButton.Name = "resourcesButton";
-            resourcesButton.Size = new Size(128, 47);
+            resourcesButton.Size = new Size(128, 44);
             resourcesButton.TabIndex = 2;
             resourcesButton.Text = "Resources";
-            resourcesButton.UseVisualStyleBackColor = true;
+            resourcesButton.UseVisualStyleBackColor = false;
             resourcesButton.Click += ResourcesButton_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(0, 44);
+            button2.BackColor = Color.FromArgb(235, 240, 163);
+            button2.Location = new Point(0, 41);
             button2.Name = "button2";
-            button2.Size = new Size(128, 47);
+            button2.Size = new Size(128, 44);
             button2.TabIndex = 1;
             button2.Text = "Notes";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
+            button1.BackColor = Color.FromArgb(235, 240, 163);
             button1.Location = new Point(0, 0);
             button1.Name = "button1";
-            button1.Size = new Size(128, 47);
+            button1.Size = new Size(128, 44);
             button1.TabIndex = 0;
             button1.Text = "Calendar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(377, 9);
+            label2.Location = new Point(377, 8);
             label2.Name = "label2";
             label2.Size = new Size(68, 37);
             label2.TabIndex = 2;
@@ -193,7 +196,7 @@
             // 
             // daysOfTheWeekPanel
             // 
-            daysOfTheWeekPanel.BackColor = SystemColors.AppWorkspace;
+            daysOfTheWeekPanel.BackColor = Color.FromArgb(149, 214, 213);
             daysOfTheWeekPanel.Controls.Add(saturdayLabel);
             daysOfTheWeekPanel.Controls.Add(fridayLabel);
             daysOfTheWeekPanel.Controls.Add(thursdayLabel);
@@ -201,19 +204,19 @@
             daysOfTheWeekPanel.Controls.Add(tuesdayLabel);
             daysOfTheWeekPanel.Controls.Add(mondayLabel);
             daysOfTheWeekPanel.Controls.Add(sundayLabel);
-            daysOfTheWeekPanel.Location = new Point(7, 54);
+            daysOfTheWeekPanel.Location = new Point(7, 50);
             daysOfTheWeekPanel.Name = "daysOfTheWeekPanel";
-            daysOfTheWeekPanel.Size = new Size(809, 36);
+            daysOfTheWeekPanel.Size = new Size(809, 34);
             daysOfTheWeekPanel.TabIndex = 3;
             // 
             // saturdayLabel
             // 
             saturdayLabel.AutoSize = true;
             saturdayLabel.BackColor = Color.Transparent;
-            saturdayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            saturdayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             saturdayLabel.Location = new Point(695, 2);
             saturdayLabel.Name = "saturdayLabel";
-            saturdayLabel.Size = new Size(104, 31);
+            saturdayLabel.Size = new Size(111, 30);
             saturdayLabel.TabIndex = 4;
             saturdayLabel.Text = "Saturday";
             // 
@@ -221,10 +224,10 @@
             // 
             fridayLabel.AutoSize = true;
             fridayLabel.BackColor = Color.Transparent;
-            fridayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            fridayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             fridayLabel.Location = new Point(595, 2);
             fridayLabel.Name = "fridayLabel";
-            fridayLabel.Size = new Size(76, 31);
+            fridayLabel.Size = new Size(80, 30);
             fridayLabel.TabIndex = 4;
             fridayLabel.Text = "Friday";
             // 
@@ -232,10 +235,10 @@
             // 
             thursdayLabel.AutoSize = true;
             thursdayLabel.BackColor = Color.Transparent;
-            thursdayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            thursdayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             thursdayLabel.Location = new Point(470, 3);
             thursdayLabel.Name = "thursdayLabel";
-            thursdayLabel.Size = new Size(107, 31);
+            thursdayLabel.Size = new Size(114, 30);
             thursdayLabel.TabIndex = 4;
             thursdayLabel.Text = "Thursday";
             // 
@@ -243,10 +246,10 @@
             // 
             wednesdayLabel.AutoSize = true;
             wednesdayLabel.BackColor = Color.Transparent;
-            wednesdayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            wednesdayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             wednesdayLabel.Location = new Point(337, 2);
             wednesdayLabel.Name = "wednesdayLabel";
-            wednesdayLabel.Size = new Size(132, 31);
+            wednesdayLabel.Size = new Size(142, 30);
             wednesdayLabel.TabIndex = 4;
             wednesdayLabel.Text = "Wednesday";
             // 
@@ -254,10 +257,10 @@
             // 
             tuesdayLabel.AutoSize = true;
             tuesdayLabel.BackColor = Color.Transparent;
-            tuesdayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            tuesdayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             tuesdayLabel.Location = new Point(239, 2);
             tuesdayLabel.Name = "tuesdayLabel";
-            tuesdayLabel.Size = new Size(98, 31);
+            tuesdayLabel.Size = new Size(104, 30);
             tuesdayLabel.TabIndex = 4;
             tuesdayLabel.Text = "Tuesday";
             // 
@@ -265,10 +268,10 @@
             // 
             mondayLabel.AutoSize = true;
             mondayLabel.BackColor = Color.Transparent;
-            mondayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            mondayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             mondayLabel.Location = new Point(124, 3);
             mondayLabel.Name = "mondayLabel";
-            mondayLabel.Size = new Size(98, 31);
+            mondayLabel.Size = new Size(104, 30);
             mondayLabel.TabIndex = 1;
             mondayLabel.Text = "Monday";
             // 
@@ -276,10 +279,10 @@
             // 
             sundayLabel.AutoSize = true;
             sundayLabel.BackColor = Color.Transparent;
-            sundayLabel.Font = new Font("Segoe UI", 17F, FontStyle.Regular, GraphicsUnit.Point);
+            sundayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
             sundayLabel.Location = new Point(13, 2);
             sundayLabel.Name = "sundayLabel";
-            sundayLabel.Size = new Size(89, 31);
+            sundayLabel.Size = new Size(94, 30);
             sundayLabel.TabIndex = 0;
             sundayLabel.Text = "Sunday";
             // 
@@ -297,9 +300,9 @@
             calendarPanel.Controls.Add(panel2);
             calendarPanel.Controls.Add(label2);
             calendarPanel.Controls.Add(daysOfTheWeekPanel);
-            calendarPanel.Location = new Point(163, 86);
+            calendarPanel.Location = new Point(163, 80);
             calendarPanel.Name = "calendarPanel";
-            calendarPanel.Size = new Size(822, 729);
+            calendarPanel.Size = new Size(822, 680);
             calendarPanel.TabIndex = 4;
             // 
             // panel10
@@ -308,9 +311,9 @@
             panel10.Controls.Add(button35);
             panel10.Controls.Add(button36);
             panel10.Controls.Add(button37);
-            panel10.Location = new Point(0, 617);
+            panel10.Location = new Point(0, 576);
             panel10.Name = "panel10";
-            panel10.Size = new Size(807, 98);
+            panel10.Size = new Size(807, 91);
             panel10.TabIndex = 19;
             // 
             // button34
@@ -318,7 +321,7 @@
             button34.BackgroundImage = (Image)resources.GetObject("button34.BackgroundImage");
             button34.Location = new Point(10, 6);
             button34.Name = "button34";
-            button34.Size = new Size(97, 87);
+            button34.Size = new Size(97, 81);
             button34.TabIndex = 5;
             button34.UseVisualStyleBackColor = true;
             // 
@@ -327,7 +330,7 @@
             button35.BackgroundImage = (Image)resources.GetObject("button35.BackgroundImage");
             button35.Location = new Point(240, 6);
             button35.Name = "button35";
-            button35.Size = new Size(97, 87);
+            button35.Size = new Size(97, 81);
             button35.TabIndex = 8;
             button35.UseVisualStyleBackColor = true;
             // 
@@ -336,7 +339,7 @@
             button36.BackgroundImage = (Image)resources.GetObject("button36.BackgroundImage");
             button36.Location = new Point(125, 6);
             button36.Name = "button36";
-            button36.Size = new Size(97, 87);
+            button36.Size = new Size(97, 81);
             button36.TabIndex = 6;
             button36.UseVisualStyleBackColor = true;
             // 
@@ -345,7 +348,7 @@
             button37.BackgroundImage = (Image)resources.GetObject("button37.BackgroundImage");
             button37.Location = new Point(355, 6);
             button37.Name = "button37";
-            button37.Size = new Size(97, 87);
+            button37.Size = new Size(97, 81);
             button37.TabIndex = 7;
             button37.UseVisualStyleBackColor = true;
             // 
@@ -355,9 +358,9 @@
             panel11.Controls.Add(label34);
             panel11.Controls.Add(label35);
             panel11.Controls.Add(label36);
-            panel11.Location = new Point(3, 592);
+            panel11.Location = new Point(3, 553);
             panel11.Name = "panel11";
-            panel11.Size = new Size(807, 25);
+            panel11.Size = new Size(807, 23);
             panel11.TabIndex = 18;
             // 
             // label30
@@ -409,9 +412,9 @@
             panel8.Controls.Add(button29);
             panel8.Controls.Add(button30);
             panel8.Controls.Add(button31);
-            panel8.Location = new Point(1, 494);
+            panel8.Location = new Point(1, 461);
             panel8.Name = "panel8";
-            panel8.Size = new Size(807, 98);
+            panel8.Size = new Size(807, 91);
             panel8.TabIndex = 17;
             // 
             // button25
@@ -419,7 +422,7 @@
             button25.BackgroundImage = (Image)resources.GetObject("button25.BackgroundImage");
             button25.Location = new Point(700, 6);
             button25.Name = "button25";
-            button25.Size = new Size(97, 87);
+            button25.Size = new Size(97, 81);
             button25.TabIndex = 11;
             button25.UseVisualStyleBackColor = true;
             // 
@@ -428,7 +431,7 @@
             button26.BackgroundImage = (Image)resources.GetObject("button26.BackgroundImage");
             button26.Location = new Point(585, 6);
             button26.Name = "button26";
-            button26.Size = new Size(97, 87);
+            button26.Size = new Size(97, 81);
             button26.TabIndex = 10;
             button26.UseVisualStyleBackColor = true;
             // 
@@ -437,7 +440,7 @@
             button27.BackgroundImage = (Image)resources.GetObject("button27.BackgroundImage");
             button27.Location = new Point(470, 6);
             button27.Name = "button27";
-            button27.Size = new Size(97, 87);
+            button27.Size = new Size(97, 81);
             button27.TabIndex = 9;
             button27.UseVisualStyleBackColor = true;
             // 
@@ -446,7 +449,7 @@
             button28.BackgroundImage = (Image)resources.GetObject("button28.BackgroundImage");
             button28.Location = new Point(10, 6);
             button28.Name = "button28";
-            button28.Size = new Size(97, 87);
+            button28.Size = new Size(97, 81);
             button28.TabIndex = 5;
             button28.UseVisualStyleBackColor = true;
             // 
@@ -455,7 +458,7 @@
             button29.BackgroundImage = (Image)resources.GetObject("button29.BackgroundImage");
             button29.Location = new Point(240, 6);
             button29.Name = "button29";
-            button29.Size = new Size(97, 87);
+            button29.Size = new Size(97, 81);
             button29.TabIndex = 8;
             button29.UseVisualStyleBackColor = true;
             // 
@@ -464,7 +467,7 @@
             button30.BackgroundImage = (Image)resources.GetObject("button30.BackgroundImage");
             button30.Location = new Point(125, 6);
             button30.Name = "button30";
-            button30.Size = new Size(97, 87);
+            button30.Size = new Size(97, 81);
             button30.TabIndex = 6;
             button30.UseVisualStyleBackColor = true;
             // 
@@ -473,7 +476,7 @@
             button31.BackgroundImage = (Image)resources.GetObject("button31.BackgroundImage");
             button31.Location = new Point(355, 6);
             button31.Name = "button31";
-            button31.Size = new Size(97, 87);
+            button31.Size = new Size(97, 81);
             button31.TabIndex = 7;
             button31.UseVisualStyleBackColor = true;
             // 
@@ -486,9 +489,9 @@
             panel9.Controls.Add(label27);
             panel9.Controls.Add(label28);
             panel9.Controls.Add(label29);
-            panel9.Location = new Point(4, 469);
+            panel9.Location = new Point(4, 438);
             panel9.Name = "panel9";
-            panel9.Size = new Size(807, 25);
+            panel9.Size = new Size(807, 23);
             panel9.TabIndex = 16;
             // 
             // label23
@@ -570,9 +573,9 @@
             panel6.Controls.Add(button22);
             panel6.Controls.Add(button23);
             panel6.Controls.Add(button24);
-            panel6.Location = new Point(3, 371);
+            panel6.Location = new Point(3, 346);
             panel6.Name = "panel6";
-            panel6.Size = new Size(807, 98);
+            panel6.Size = new Size(807, 91);
             panel6.TabIndex = 15;
             // 
             // button18
@@ -580,7 +583,7 @@
             button18.BackgroundImage = (Image)resources.GetObject("button18.BackgroundImage");
             button18.Location = new Point(700, 6);
             button18.Name = "button18";
-            button18.Size = new Size(97, 87);
+            button18.Size = new Size(97, 81);
             button18.TabIndex = 11;
             button18.UseVisualStyleBackColor = true;
             // 
@@ -589,7 +592,7 @@
             button19.BackgroundImage = (Image)resources.GetObject("button19.BackgroundImage");
             button19.Location = new Point(585, 6);
             button19.Name = "button19";
-            button19.Size = new Size(97, 87);
+            button19.Size = new Size(97, 81);
             button19.TabIndex = 10;
             button19.UseVisualStyleBackColor = true;
             // 
@@ -598,7 +601,7 @@
             button20.BackgroundImage = (Image)resources.GetObject("button20.BackgroundImage");
             button20.Location = new Point(470, 6);
             button20.Name = "button20";
-            button20.Size = new Size(97, 87);
+            button20.Size = new Size(97, 81);
             button20.TabIndex = 9;
             button20.UseVisualStyleBackColor = true;
             // 
@@ -607,7 +610,7 @@
             button21.BackgroundImage = (Image)resources.GetObject("button21.BackgroundImage");
             button21.Location = new Point(10, 6);
             button21.Name = "button21";
-            button21.Size = new Size(97, 87);
+            button21.Size = new Size(97, 81);
             button21.TabIndex = 5;
             button21.UseVisualStyleBackColor = true;
             // 
@@ -616,7 +619,7 @@
             button22.BackgroundImage = (Image)resources.GetObject("button22.BackgroundImage");
             button22.Location = new Point(240, 6);
             button22.Name = "button22";
-            button22.Size = new Size(97, 87);
+            button22.Size = new Size(97, 81);
             button22.TabIndex = 8;
             button22.UseVisualStyleBackColor = true;
             // 
@@ -625,7 +628,7 @@
             button23.BackgroundImage = (Image)resources.GetObject("button23.BackgroundImage");
             button23.Location = new Point(125, 6);
             button23.Name = "button23";
-            button23.Size = new Size(97, 87);
+            button23.Size = new Size(97, 81);
             button23.TabIndex = 6;
             button23.UseVisualStyleBackColor = true;
             // 
@@ -634,7 +637,7 @@
             button24.BackgroundImage = (Image)resources.GetObject("button24.BackgroundImage");
             button24.Location = new Point(355, 6);
             button24.Name = "button24";
-            button24.Size = new Size(97, 87);
+            button24.Size = new Size(97, 81);
             button24.TabIndex = 7;
             button24.UseVisualStyleBackColor = true;
             // 
@@ -647,9 +650,9 @@
             panel7.Controls.Add(label18);
             panel7.Controls.Add(label19);
             panel7.Controls.Add(label20);
-            panel7.Location = new Point(6, 346);
+            panel7.Location = new Point(6, 323);
             panel7.Name = "panel7";
-            panel7.Size = new Size(807, 25);
+            panel7.Size = new Size(807, 23);
             panel7.TabIndex = 14;
             // 
             // label22
@@ -731,9 +734,9 @@
             panel4.Controls.Add(button15);
             panel4.Controls.Add(button16);
             panel4.Controls.Add(button17);
-            panel4.Location = new Point(5, 248);
+            panel4.Location = new Point(5, 231);
             panel4.Name = "panel4";
-            panel4.Size = new Size(807, 98);
+            panel4.Size = new Size(807, 91);
             panel4.TabIndex = 13;
             // 
             // button11
@@ -741,7 +744,7 @@
             button11.BackgroundImage = (Image)resources.GetObject("button11.BackgroundImage");
             button11.Location = new Point(700, 6);
             button11.Name = "button11";
-            button11.Size = new Size(97, 87);
+            button11.Size = new Size(97, 81);
             button11.TabIndex = 11;
             button11.UseVisualStyleBackColor = true;
             // 
@@ -750,7 +753,7 @@
             button12.BackgroundImage = (Image)resources.GetObject("button12.BackgroundImage");
             button12.Location = new Point(585, 6);
             button12.Name = "button12";
-            button12.Size = new Size(97, 87);
+            button12.Size = new Size(97, 81);
             button12.TabIndex = 10;
             button12.UseVisualStyleBackColor = true;
             // 
@@ -759,7 +762,7 @@
             button13.BackgroundImage = (Image)resources.GetObject("button13.BackgroundImage");
             button13.Location = new Point(470, 6);
             button13.Name = "button13";
-            button13.Size = new Size(97, 87);
+            button13.Size = new Size(97, 81);
             button13.TabIndex = 9;
             button13.UseVisualStyleBackColor = true;
             // 
@@ -768,7 +771,7 @@
             button14.BackgroundImage = (Image)resources.GetObject("button14.BackgroundImage");
             button14.Location = new Point(10, 6);
             button14.Name = "button14";
-            button14.Size = new Size(97, 87);
+            button14.Size = new Size(97, 81);
             button14.TabIndex = 5;
             button14.UseVisualStyleBackColor = true;
             // 
@@ -777,7 +780,7 @@
             button15.BackgroundImage = (Image)resources.GetObject("button15.BackgroundImage");
             button15.Location = new Point(240, 6);
             button15.Name = "button15";
-            button15.Size = new Size(97, 87);
+            button15.Size = new Size(97, 81);
             button15.TabIndex = 8;
             button15.UseVisualStyleBackColor = true;
             // 
@@ -786,7 +789,7 @@
             button16.BackgroundImage = (Image)resources.GetObject("button16.BackgroundImage");
             button16.Location = new Point(125, 6);
             button16.Name = "button16";
-            button16.Size = new Size(97, 87);
+            button16.Size = new Size(97, 81);
             button16.TabIndex = 6;
             button16.UseVisualStyleBackColor = true;
             // 
@@ -795,7 +798,7 @@
             button17.BackgroundImage = (Image)resources.GetObject("button17.BackgroundImage");
             button17.Location = new Point(355, 6);
             button17.Name = "button17";
-            button17.Size = new Size(97, 87);
+            button17.Size = new Size(97, 81);
             button17.TabIndex = 7;
             button17.UseVisualStyleBackColor = true;
             // 
@@ -808,9 +811,9 @@
             panel5.Controls.Add(label12);
             panel5.Controls.Add(label13);
             panel5.Controls.Add(label14);
-            panel5.Location = new Point(8, 223);
+            panel5.Location = new Point(8, 208);
             panel5.Name = "panel5";
-            panel5.Size = new Size(807, 25);
+            panel5.Size = new Size(807, 23);
             panel5.TabIndex = 12;
             // 
             // label21
@@ -847,7 +850,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(494, 4);
+            label11.Location = new Point(496, 2);
             label11.Name = "label11";
             label11.Size = new Size(43, 21);
             label11.TabIndex = 3;
@@ -867,7 +870,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(378, 4);
+            label13.Location = new Point(382, 1);
             label13.Name = "label13";
             label13.Size = new Size(43, 21);
             label13.TabIndex = 1;
@@ -891,9 +894,9 @@
             panel3.Controls.Add(may2button);
             panel3.Controls.Add(may1button);
             panel3.Controls.Add(may3button);
-            panel3.Location = new Point(8, 125);
+            panel3.Location = new Point(8, 117);
             panel3.Name = "panel3";
-            panel3.Size = new Size(807, 98);
+            panel3.Size = new Size(807, 91);
             panel3.TabIndex = 9;
             // 
             // button10
@@ -901,7 +904,7 @@
             button10.BackgroundImage = (Image)resources.GetObject("button10.BackgroundImage");
             button10.Location = new Point(700, 6);
             button10.Name = "button10";
-            button10.Size = new Size(97, 87);
+            button10.Size = new Size(97, 81);
             button10.TabIndex = 11;
             button10.UseVisualStyleBackColor = true;
             // 
@@ -910,7 +913,7 @@
             button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
             button9.Location = new Point(585, 6);
             button9.Name = "button9";
-            button9.Size = new Size(97, 87);
+            button9.Size = new Size(97, 81);
             button9.TabIndex = 10;
             button9.UseVisualStyleBackColor = true;
             // 
@@ -919,7 +922,7 @@
             button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
             button8.Location = new Point(470, 6);
             button8.Name = "button8";
-            button8.Size = new Size(97, 87);
+            button8.Size = new Size(97, 81);
             button8.TabIndex = 9;
             button8.UseVisualStyleBackColor = true;
             // 
@@ -928,7 +931,7 @@
             may2button.BackgroundImage = (Image)resources.GetObject("may2button.BackgroundImage");
             may2button.Location = new Point(240, 6);
             may2button.Name = "may2button";
-            may2button.Size = new Size(97, 87);
+            may2button.Size = new Size(97, 81);
             may2button.TabIndex = 8;
             may2button.UseVisualStyleBackColor = true;
             // 
@@ -937,7 +940,7 @@
             may1button.BackgroundImage = (Image)resources.GetObject("may1button.BackgroundImage");
             may1button.Location = new Point(125, 6);
             may1button.Name = "may1button";
-            may1button.Size = new Size(97, 87);
+            may1button.Size = new Size(97, 81);
             may1button.TabIndex = 6;
             may1button.UseVisualStyleBackColor = true;
             may1button.Click += may1button_Click;
@@ -947,7 +950,7 @@
             may3button.BackgroundImage = (Image)resources.GetObject("may3button.BackgroundImage");
             may3button.Location = new Point(355, 6);
             may3button.Name = "may3button";
-            may3button.Size = new Size(97, 87);
+            may3button.Size = new Size(97, 81);
             may3button.TabIndex = 7;
             may3button.UseVisualStyleBackColor = true;
             // 
@@ -959,9 +962,9 @@
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
-            panel2.Location = new Point(11, 100);
+            panel2.Location = new Point(11, 93);
             panel2.Name = "panel2";
-            panel2.Size = new Size(807, 25);
+            panel2.Size = new Size(807, 23);
             panel2.TabIndex = 4;
             // 
             // label8
@@ -1026,24 +1029,27 @@
             // 
             // viewOptionsCheckListBox
             // 
+            viewOptionsCheckListBox.BackColor = Color.FromArgb(235, 240, 163);
             viewOptionsCheckListBox.FormattingEnabled = true;
-            viewOptionsCheckListBox.Location = new Point(1011, 119);
+            viewOptionsCheckListBox.Location = new Point(1011, 111);
             viewOptionsCheckListBox.Name = "viewOptionsCheckListBox";
-            viewOptionsCheckListBox.Size = new Size(120, 94);
+            viewOptionsCheckListBox.Size = new Size(120, 72);
             viewOptionsCheckListBox.TabIndex = 5;
             // 
             // Calendar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1175, 829);
+            BackColor = Color.FromArgb(236, 211, 197);
+            ClientSize = new Size(1175, 774);
             Controls.Add(viewOptionsCheckListBox);
             Controls.Add(calendarPanel);
             Controls.Add(panel1);
             Controls.Add(label1);
+            Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Calendar";
             Text = "Helm";
-            Load += Calendar_Load;
+            Load += Calendar.Calendar_Load;
             panel1.ResumeLayout(false);
             daysOfTheWeekPanel.ResumeLayout(false);
             daysOfTheWeekPanel.PerformLayout();
