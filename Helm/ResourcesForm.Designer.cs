@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             tableLayoutPanel1 = new TableLayoutPanel();
+            cleverLink = new LinkLabel();
             usefulLinksLabel = new Label();
             amadorWebsiteLink = new LinkLabel();
-            cleverLink = new LinkLabel();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,6 +52,20 @@
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Absolute, 100F));
             tableLayoutPanel1.Size = new Size(342, 406);
             tableLayoutPanel1.TabIndex = 0;
+            // 
+            // cleverLink
+            // 
+            cleverLink.Anchor = AnchorStyles.None;
+            cleverLink.AutoSize = true;
+            cleverLink.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            cleverLink.Location = new Point(138, 154);
+            cleverLink.Name = "cleverLink";
+            cleverLink.Size = new Size(66, 28);
+            cleverLink.TabIndex = 2;
+            cleverLink.TabStop = true;
+            cleverLink.Text = "Clever";
+            cleverLink.TextAlign = ContentAlignment.MiddleCenter;
+            cleverLink.LinkClicked += cleverLink_LinkClicked;
             // 
             // usefulLinksLabel
             // 
@@ -76,19 +90,6 @@
             amadorWebsiteLink.Text = "Amador Website";
             amadorWebsiteLink.TextAlign = ContentAlignment.MiddleCenter;
             amadorWebsiteLink.LinkClicked += amadorWebsiteLink_LinkClicked;
-            // 
-            // cleverLink
-            // 
-            cleverLink.Anchor = AnchorStyles.None;
-            cleverLink.AutoSize = true;
-            cleverLink.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
-            cleverLink.Location = new Point(138, 154);
-            cleverLink.Name = "cleverLink";
-            cleverLink.Size = new Size(66, 28);
-            cleverLink.TabIndex = 2;
-            cleverLink.TabStop = true;
-            cleverLink.Text = "Clever";
-            cleverLink.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // ResourcesForm
             // 

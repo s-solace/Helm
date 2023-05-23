@@ -39,7 +39,7 @@ namespace Helm
 
             InitializeComponent();
 
-            mainNotifyIcon.Icon = new System.Drawing.Icon(Path.GetFullPath("C:\\Users\\Akarsh\\source\\repos\\Helm\\Helm\\Images\\notification.ico"));
+            mainNotifyIcon.Icon = new System.Drawing.Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
             mainNotifyIcon.Text = "";
             mainNotifyIcon.Visible = true;
 
@@ -103,6 +103,7 @@ namespace Helm
 
         private void Timer_Tick(object sender, EventArgs e)
         {
+            Debug.WriteLine("timer tiick");
             reminderHandler.CheckAndSendNotification();
         }
 
@@ -112,5 +113,9 @@ namespace Helm
             mainNotifyIcon.ShowBalloonTip(3000, "Reminder", "This is the reminder for the thing you set!", ToolTipIcon.Info);
         }
 
+        private void wednesdayLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,8 +33,7 @@
             label1 = new Label();
             panel1 = new Panel();
             resourcesButton = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            notesButton = new Button();
             label2 = new Label();
             daysOfTheWeekPanel = new Panel();
             saturdayLabel = new Label();
@@ -104,12 +103,12 @@
             label13 = new Label();
             label14 = new Label();
             panel3 = new Panel();
-            button10 = new Button();
-            button9 = new Button();
-            button8 = new Button();
-            may2button = new Button();
+            button7 = new Button();
+            button6 = new Button();
+            button3 = new Button();
+            button5 = new Button();
+            button4 = new Button();
             may1button = new Button();
-            may3button = new Button();
             panel2 = new Panel();
             label8 = new Label();
             label7 = new Label();
@@ -147,17 +146,16 @@
             // 
             panel1.BackColor = SystemColors.ButtonShadow;
             panel1.Controls.Add(resourcesButton);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Location = new Point(7, 81);
+            panel1.Controls.Add(notesButton);
+            panel1.Location = new Point(7, 80);
             panel1.Name = "panel1";
-            panel1.Size = new Size(128, 126);
+            panel1.Size = new Size(128, 88);
             panel1.TabIndex = 1;
             // 
             // resourcesButton
             // 
             resourcesButton.BackColor = Color.FromArgb(235, 240, 163);
-            resourcesButton.Location = new Point(0, 79);
+            resourcesButton.Location = new Point(0, 44);
             resourcesButton.Name = "resourcesButton";
             resourcesButton.Size = new Size(128, 44);
             resourcesButton.TabIndex = 2;
@@ -165,26 +163,16 @@
             resourcesButton.UseVisualStyleBackColor = false;
             resourcesButton.Click += ResourcesButton_Click;
             // 
-            // button2
+            // notesButton
             // 
-            button2.BackColor = Color.FromArgb(235, 240, 163);
-            button2.Location = new Point(0, 41);
-            button2.Name = "button2";
-            button2.Size = new Size(128, 44);
-            button2.TabIndex = 1;
-            button2.Text = "Notes";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(235, 240, 163);
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(128, 44);
-            button1.TabIndex = 0;
-            button1.Text = "Calendar";
-            button1.UseVisualStyleBackColor = false;
+            notesButton.BackColor = Color.FromArgb(235, 240, 163);
+            notesButton.Location = new Point(0, 0);
+            notesButton.Name = "notesButton";
+            notesButton.Size = new Size(128, 44);
+            notesButton.TabIndex = 1;
+            notesButton.Text = "Notes";
+            notesButton.UseVisualStyleBackColor = false;
+            notesButton.Click += button2_Click;
             // 
             // label2
             // 
@@ -248,19 +236,20 @@
             // 
             wednesdayLabel.AutoSize = true;
             wednesdayLabel.BackColor = Color.Transparent;
-            wednesdayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
-            wednesdayLabel.Location = new Point(337, 2);
+            wednesdayLabel.Font = new Font("Microsoft YaHei UI", 16F, FontStyle.Regular, GraphicsUnit.Point);
+            wednesdayLabel.Location = new Point(335, 2);
             wednesdayLabel.Name = "wednesdayLabel";
-            wednesdayLabel.Size = new Size(142, 30);
+            wednesdayLabel.Size = new Size(135, 30);
             wednesdayLabel.TabIndex = 4;
             wednesdayLabel.Text = "Wednesday";
+            wednesdayLabel.Click += wednesdayLabel_Click;
             // 
             // tuesdayLabel
             // 
             tuesdayLabel.AutoSize = true;
             tuesdayLabel.BackColor = Color.Transparent;
             tuesdayLabel.Font = new Font("Microsoft YaHei UI", 17.25F, FontStyle.Regular, GraphicsUnit.Point);
-            tuesdayLabel.Location = new Point(239, 2);
+            tuesdayLabel.Location = new Point(234, 2);
             tuesdayLabel.Name = "tuesdayLabel";
             tuesdayLabel.Size = new Size(104, 30);
             tuesdayLabel.TabIndex = 4;
@@ -890,71 +879,71 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(button10);
-            panel3.Controls.Add(button9);
-            panel3.Controls.Add(button8);
-            panel3.Controls.Add(may2button);
+            panel3.Controls.Add(button7);
+            panel3.Controls.Add(button6);
+            panel3.Controls.Add(button3);
+            panel3.Controls.Add(button5);
+            panel3.Controls.Add(button4);
             panel3.Controls.Add(may1button);
-            panel3.Controls.Add(may3button);
             panel3.Location = new Point(8, 117);
             panel3.Name = "panel3";
             panel3.Size = new Size(807, 91);
             panel3.TabIndex = 9;
             // 
-            // button10
+            // button7
             // 
-            button10.BackgroundImage = (Image)resources.GetObject("button10.BackgroundImage");
-            button10.Location = new Point(700, 6);
-            button10.Name = "button10";
-            button10.Size = new Size(97, 81);
-            button10.TabIndex = 11;
-            button10.UseVisualStyleBackColor = true;
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.Location = new Point(696, 5);
+            button7.Name = "button7";
+            button7.Size = new Size(97, 81);
+            button7.TabIndex = 10;
+            button7.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // button6
             // 
-            button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
-            button9.Location = new Point(585, 6);
-            button9.Name = "button9";
-            button9.Size = new Size(97, 81);
-            button9.TabIndex = 10;
-            button9.UseVisualStyleBackColor = true;
+            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
+            button6.Location = new Point(582, 5);
+            button6.Name = "button6";
+            button6.Size = new Size(97, 81);
+            button6.TabIndex = 9;
+            button6.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // button3
             // 
-            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
-            button8.Location = new Point(470, 6);
-            button8.Name = "button8";
-            button8.Size = new Size(97, 81);
-            button8.TabIndex = 9;
-            button8.UseVisualStyleBackColor = true;
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.Location = new Point(468, 5);
+            button3.Name = "button3";
+            button3.Size = new Size(97, 81);
+            button3.TabIndex = 7;
+            button3.UseVisualStyleBackColor = true;
             // 
-            // may2button
+            // button5
             // 
-            may2button.BackgroundImage = (Image)resources.GetObject("may2button.BackgroundImage");
-            may2button.Location = new Point(240, 6);
-            may2button.Name = "may2button";
-            may2button.Size = new Size(97, 81);
-            may2button.TabIndex = 8;
-            may2button.UseVisualStyleBackColor = true;
+            button5.BackgroundImage = (Image)resources.GetObject("button5.BackgroundImage");
+            button5.Location = new Point(354, 5);
+            button5.Name = "button5";
+            button5.Size = new Size(97, 81);
+            button5.TabIndex = 8;
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
+            button4.Location = new Point(240, 5);
+            button4.Name = "button4";
+            button4.Size = new Size(97, 81);
+            button4.TabIndex = 7;
+            button4.UseVisualStyleBackColor = true;
             // 
             // may1button
             // 
             may1button.BackgroundImage = (Image)resources.GetObject("may1button.BackgroundImage");
-            may1button.Location = new Point(125, 6);
+            may1button.Location = new Point(126, 5);
             may1button.Name = "may1button";
             may1button.Size = new Size(97, 81);
             may1button.TabIndex = 6;
             may1button.UseVisualStyleBackColor = true;
             may1button.Click += may1button_Click;
-            // 
-            // may3button
-            // 
-            may3button.BackgroundImage = (Image)resources.GetObject("may3button.BackgroundImage");
-            may3button.Location = new Point(355, 6);
-            may3button.Name = "may3button";
-            may3button.Size = new Size(97, 81);
-            may3button.TabIndex = 7;
-            may3button.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -973,7 +962,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(731, 2);
+            label8.Location = new Point(728, 2);
             label8.Name = "label8";
             label8.Size = new Size(34, 21);
             label8.TabIndex = 5;
@@ -983,7 +972,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(615, 2);
+            label7.Location = new Point(612, 2);
             label7.Name = "label7";
             label7.Size = new Size(34, 21);
             label7.TabIndex = 4;
@@ -993,7 +982,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(501, 2);
+            label6.Location = new Point(498, 2);
             label6.Name = "label6";
             label6.Size = new Size(34, 21);
             label6.TabIndex = 3;
@@ -1013,7 +1002,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(386, 2);
+            label4.Location = new Point(383, 2);
             label4.Name = "label4";
             label4.Size = new Size(34, 21);
             label4.TabIndex = 1;
@@ -1075,8 +1064,7 @@
         private Label label1;
         private Panel panel1;
         private Button resourcesButton;
-        private Button button2;
-        private Button button1;
+        private Button notesButton;
         private Label label2;
         private Panel daysOfTheWeekPanel;
         private Label sundayLabel;
@@ -1095,12 +1083,7 @@
         private Label label8;
         private Label label7;
         private Panel panel3;
-        private Button button10;
-        private Button button9;
-        private Button button8;
-        private Button may2button;
         private Button may1button;
-        private Button may3button;
         private Panel panel6;
         private Button button18;
         private Button button19;
@@ -1160,5 +1143,10 @@
         private Label label35;
         private Label label36;
         private NotifyIcon mainNotifyIcon;
+        private Button button7;
+        private Button button6;
+        private Button button3;
+        private Button button5;
+        private Button button4;
     }
 }
