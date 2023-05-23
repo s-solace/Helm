@@ -11,7 +11,7 @@ namespace Helm
         private string name;
         private string content;
 
-        Note(string n, string c)
+        public Note(string n, string c)
         {
             name = n;
             content = c;
@@ -23,6 +23,14 @@ namespace Helm
             form.noteText.Text = content;
         }
 
+        public string getName()
+        {
+            return name;
+        }
+        public string getContent() 
+        { 
+            return content;
+        }
 
     }
 }

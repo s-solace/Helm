@@ -13,12 +13,9 @@ namespace Helm
     public partial class BaseDayForm : Form
     {
 
-        Reminders remindersForm;
-
         public BaseDayForm()
         {
             InitializeComponent();
-            remindersForm = new Reminders();
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -28,6 +25,8 @@ namespace Helm
 
         private void createReminderButton_Click(object sender, EventArgs e)
         {
+            Reminders remindersForm = new Reminders();
+
             remindersForm.Show();
         }
     }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
             label1 = new Label();
             panel1 = new Panel();
@@ -116,7 +117,7 @@
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
-            viewOptionsCheckListBox = new CheckedListBox();
+            mainNotifyIcon = new NotifyIcon(components);
             panel1.SuspendLayout();
             daysOfTheWeekPanel.SuspendLayout();
             calendarPanel.SuspendLayout();
@@ -173,6 +174,7 @@
             button2.TabIndex = 1;
             button2.Text = "Notes";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -1027,14 +1029,10 @@
             label3.TabIndex = 0;
             label3.Text = "5/1";
             // 
-            // viewOptionsCheckListBox
+            // mainNotifyIcon
             // 
-            viewOptionsCheckListBox.BackColor = Color.FromArgb(235, 240, 163);
-            viewOptionsCheckListBox.FormattingEnabled = true;
-            viewOptionsCheckListBox.Location = new Point(1011, 111);
-            viewOptionsCheckListBox.Name = "viewOptionsCheckListBox";
-            viewOptionsCheckListBox.Size = new Size(120, 72);
-            viewOptionsCheckListBox.TabIndex = 5;
+            mainNotifyIcon.Text = "mainNotifyIcon";
+            mainNotifyIcon.Visible = true;
             // 
             // Calendar
             // 
@@ -1042,14 +1040,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 211, 197);
             ClientSize = new Size(1175, 774);
-            Controls.Add(viewOptionsCheckListBox);
             Controls.Add(calendarPanel);
             Controls.Add(panel1);
             Controls.Add(label1);
             Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Calendar";
             Text = "Helm";
-            Load += Calendar.Calendar_Load;
             panel1.ResumeLayout(false);
             daysOfTheWeekPanel.ResumeLayout(false);
             daysOfTheWeekPanel.PerformLayout();
@@ -1153,7 +1149,6 @@
         private Label label27;
         private Label label28;
         private Label label29;
-        private CheckedListBox viewOptionsCheckListBox;
         private Panel panel10;
         private Button button34;
         private Button button35;
@@ -1164,5 +1159,6 @@
         private Label label34;
         private Label label35;
         private Label label36;
+        private NotifyIcon mainNotifyIcon;
     }
 }
