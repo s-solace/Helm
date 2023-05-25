@@ -27,8 +27,8 @@ namespace Helm
         private void setReminderButton_Click(object sender, EventArgs e)
         {
 
-
-            openCalendarForm.startTimer(reminderTimePicker, reminderDatePicker);
+            string msg = reminderNameEntry.Text;
+            openCalendarForm.startTimer(reminderTimePicker, reminderDatePicker, msg);
 
             
 
@@ -36,7 +36,7 @@ namespace Helm
             notifyIcon1.Text = "";
             notifyIcon1.Visible = true;
             notifyIcon1.BalloonTipTitle = "Reminder has been set!";
-            notifyIcon1.BalloonTipText = "Your reminder for \"" + reminderNameEntry.Text +"\" has been set. You will be reminded 5 minutes before and at the time you have set, if provided.";
+            notifyIcon1.BalloonTipText = "Your reminder for \"" + reminderNameEntry.Text +"\" has been set. You will be reminded at the time you have set, if provided, or at 00:00 on the day you chose.";
             notifyIcon1.ShowBalloonTip(100);
 
             this.Hide();

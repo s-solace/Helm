@@ -69,7 +69,7 @@ namespace Helm
             notesForm.Show();
         }
 
-        public void startTimer(DateTimePicker reminderTimePicker, DateTimePicker reminderDatePicker)
+        public void startTimer(DateTimePicker reminderTimePicker, DateTimePicker reminderDatePicker, string msg)
         {
 
             string[] bob = reminderDatePicker.Text.Split(' ');
@@ -86,12 +86,12 @@ namespace Helm
                 int secondSub = reminderTimePicker.Value.Second;
 
                 DateTime dt = new DateTime(yearSub, monthSub, daySub, hoursSub, minuteSub, secondSub);
-                reminderHandler = new ReminderHandler(dt, true);
+                reminderHandler = new ReminderHandler(dt, true, msg);
             }
             else
             {
                 DateTime dt = new DateTime(yearSub, monthSub, daySub);
-                reminderHandler = new ReminderHandler(dt, false);
+                reminderHandler = new ReminderHandler(dt, false, msg);
             }
 
 
@@ -107,10 +107,10 @@ namespace Helm
             reminderHandler.CheckAndSendNotification();
         }
 
-        public void DisplayNotification()
+        public void DisplayNotification(string notif)
         {
             // Display the notification using the NotifyIcon
-            mainNotifyIcon.ShowBalloonTip(3000, "Reminder", "This is the reminder for the thing you set!", ToolTipIcon.Info);
+            mainNotifyIcon.ShowBalloonTip(3000, "Reminder", "This is the reminder for \'" + notif + "\'!", ToolTipIcon.Info);
         }
 
         private void wednesdayLabel_Click(object sender, EventArgs e)
