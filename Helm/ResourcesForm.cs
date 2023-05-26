@@ -14,7 +14,6 @@ using System.Windows.Forms;
 namespace Helm
 {
 
-    delegate void MyDelegate(string url);
 
     public partial class ResourcesForm : Form
     {
@@ -53,8 +52,7 @@ namespace Helm
                 }
             }
         }
-
-        
+   
 
         private void cleverLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -64,7 +62,6 @@ namespace Helm
         private void addLinkButton_Click(object sender, EventArgs e)
         {
 
-            var dt = new MyDelegate(OpenUrl);
 
             string ln = linkNameEntry.Text;
             string lu = linkURLEntry.Text;
@@ -78,7 +75,7 @@ namespace Helm
             //add the control
 
             var l = new LinkLabel() { Text = ln };
-            // l.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(dt(lu));
+            l.LinkClicked += (sender, e) => OpenUrl(lu);
 
             customLinkPanel.Controls.Add(l, 0, customLinkPanel.RowCount - 1);
         }

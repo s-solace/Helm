@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace Helm
 {
     public partial class NotesForm : Form
     {
+        public ArrayList notes = new ArrayList();
 
         NewNoteForm newNoteForm;
 
@@ -27,6 +29,10 @@ namespace Helm
             {
                 newNoteForm.Show();
             }
+            else
+            {
+                newNoteForm = new NewNoteForm(this);
+            }
             
         }
 
@@ -36,7 +42,11 @@ namespace Helm
             {
                 if (notesListBox.GetSelected(i)) 
                 {
-                    newNoteForm.Show();
+                    if (!newNoteForm.IsDisposed)
+                        newNoteForm.Show();
+                    else
+                        newNoteForm = new NewNoteForm(this);
+
                     newNoteForm.displayNotes(i);
                 }
             }

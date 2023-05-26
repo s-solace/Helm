@@ -1,20 +1,12 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using System.Collections;
 using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+
 
 namespace Helm
 {
     public partial class NewNoteForm : Form
     {
-        private ArrayList notes = new ArrayList();
+        
 
         private NotesForm notesForm;
 
@@ -29,7 +21,7 @@ namespace Helm
             var n = new Note(noteNameTextBox.Text, noteText.Text);
             notesForm.notesListBox.Items.Add(n.getName());
 
-            notes.Add(n);
+            notesForm.notes.Add(n);
 
             Debug.WriteLine(notesForm.notesListBox.Items);
             
@@ -38,7 +30,7 @@ namespace Helm
 
         public void displayNotes(int i)
         {
-            var n = notes[i] as Note;
+            var n = notesForm.notes[i] as Note;
             noteNameTextBox.Text = n.getName();
             noteText.Text = n.getContent();
         }

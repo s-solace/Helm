@@ -8,6 +8,8 @@ namespace Helm
     public partial class Calendar : Form
     {
 
+        List<System.Windows.Forms.Timer> timers = new List<System.Windows.Forms.Timer>();
+
         IDictionary<string, int> months = new Dictionary<string, int>()
         {
             {"January", 1}, {"February", 2}, {"March", 3}, {"April", 4}, {"May", 5},
@@ -31,15 +33,18 @@ namespace Helm
             Properties.Settings.Default.Save();
             #endregion
 
+            #region JSON -> string dict
             /*  use this to retrieve JSON to a String Dictionary:
              *  
              *  string json = Properties.Settings.Default.MyStringDictionary;
              *  StringDictionary dayDictionary = JsonConvert.DeserializeObject<StringDictionary>(json);
              */
+            #endregion
 
             InitializeComponent();
 
-            mainNotifyIcon.Icon = new System.Drawing.Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
+            // mainNotifyIcon.Icon = new Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
+            mainNotifyIcon.Icon = new Icon(Path.GetFullPath("C:\\Users\\Akarsh\\source\\repos\\Helm\\Helm\\Images\\notification.ico"));
             mainNotifyIcon.Text = "";
             mainNotifyIcon.Visible = true;
 
@@ -99,12 +104,21 @@ namespace Helm
             timer.Interval = 1000;
             timer.Tick += Timer_Tick;
             timer.Start();
+
+            timers.Add(timer);
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            Debug.WriteLine("timer tiick");
-            reminderHandler.CheckAndSendNotification();
+            if (reminderHandler.CheckAndSendNotification())
+            {
+                // Stop the timer
+                System.Windows.Forms.Timer currentTimer = (System.Windows.Forms.Timer)sender;
+                currentTimer.Stop();
+
+                // Remove the timer from the list
+                timers.Remove(currentTimer);
+            }
         }
 
         public void DisplayNotification(string notif)

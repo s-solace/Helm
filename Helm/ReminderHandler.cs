@@ -19,14 +19,17 @@ namespace Helm
             this.msg = msg;
         }
 
-        public void CheckAndSendNotification()
+        public bool CheckAndSendNotification()
         {
             DateTime currentDateTime = DateTime.Now;
+            // DateTime maxDateTime = new DateTime(currentDateTime.Year, currentDateTime.Month, currentDateTime.Day, currentDateTime.Hour, currentDateTime.Minute, currentDateTime.Second + 1);
 
             if (dt >= currentDateTime)
             {
                 mainForm.DisplayNotification(msg);
+                return true;
             }
+            return false;
         }
 
 

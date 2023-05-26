@@ -30,9 +30,10 @@ namespace Helm
             string msg = reminderNameEntry.Text;
             openCalendarForm.startTimer(reminderTimePicker, reminderDatePicker, msg);
 
-            
 
-            notifyIcon1.Icon = new System.Drawing.Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
+
+            // mainNotifyIcon.Icon = new Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
+            notifyIcon1.Icon = new Icon(Path.GetFullPath("C:\\Users\\Akarsh\\source\\repos\\Helm\\Helm\\Images\\notification.ico"));
             notifyIcon1.Text = "";
             notifyIcon1.Visible = true;
             notifyIcon1.BalloonTipTitle = "Reminder has been set!";

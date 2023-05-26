@@ -30,7 +30,6 @@
         {
             components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calendar));
-            label1 = new Label();
             panel1 = new Panel();
             resourcesButton = new Button();
             notesButton = new Button();
@@ -117,6 +116,7 @@
             label4 = new Label();
             label3 = new Label();
             mainNotifyIcon = new NotifyIcon(components);
+            panel12 = new Panel();
             panel1.SuspendLayout();
             daysOfTheWeekPanel.SuspendLayout();
             calendarPanel.SuspendLayout();
@@ -131,16 +131,6 @@
             panel3.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("ROG Fonts", 45F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(468, 8);
-            label1.Name = "label1";
-            label1.Size = new Size(234, 72);
-            label1.TabIndex = 0;
-            label1.Text = "Helm";
             // 
             // panel1
             // 
@@ -291,7 +281,7 @@
             calendarPanel.Controls.Add(panel2);
             calendarPanel.Controls.Add(label2);
             calendarPanel.Controls.Add(daysOfTheWeekPanel);
-            calendarPanel.Location = new Point(163, 80);
+            calendarPanel.Location = new Point(176, 80);
             calendarPanel.Name = "calendarPanel";
             calendarPanel.Size = new Size(822, 680);
             calendarPanel.TabIndex = 4;
@@ -1023,15 +1013,24 @@
             mainNotifyIcon.Text = "mainNotifyIcon";
             mainNotifyIcon.Visible = true;
             // 
+            // panel12
+            // 
+            panel12.BackgroundImage = Properties.Resources.logo1;
+            panel12.BackgroundImageLayout = ImageLayout.Stretch;
+            panel12.Location = new Point(476, 2);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(223, 77);
+            panel12.TabIndex = 5;
+            // 
             // Calendar
             // 
             AutoScaleDimensions = new SizeF(7F, 14F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 211, 197);
-            ClientSize = new Size(1175, 774);
+            ClientSize = new Size(1063, 774);
             Controls.Add(calendarPanel);
             Controls.Add(panel1);
-            Controls.Add(label1);
+            Controls.Add(panel12);
             Font = new Font("Tahoma", 9F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Calendar";
             Text = "Helm";
@@ -1056,12 +1055,9 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private Panel panel1;
         private Button resourcesButton;
         private Button notesButton;
@@ -1148,5 +1144,6 @@
         private Button button3;
         private Button button5;
         private Button button4;
+        private Panel panel12;
     }
 }
