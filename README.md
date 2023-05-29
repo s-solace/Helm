@@ -4,7 +4,7 @@
 Helm is an all-in one productivity management application built for the Windows OS. This application is built with students as the target audience. Days are sorted by periods, rather than hours, allowing students to more accurately and efficiently plan out their days.
 
 ## **Installation**
-To install this application on a Windows 10+ device, run the "**[Helm Installer.exe]([https://file.io/gBPTCJvI9tP1](https://drive.google.com/file/d/1Shy9G1_d1TbM5MN7QmJSzZiCX_JoM_hG/view?usp=sharing))**" located in the main project files (not in any folder).
+To install this application on a Windows 10+ device, run the "**[Helm Installer.exe]([https://file.io/gBPTCJvI9tP1](https://drive.google.com/file/d/1Shy9G1_d1TbM5MN7QmJSzZiCX_JoM_hG/view?usp=sharing)**" located in the main project files (not in any folder).
 
 - **IMPORTANT** As I was unable to authenticate my digital signature, you will need to disable your antivirus in order to run the installer.
 - This application was built on the .NET 7.0 framework, which you may need to install. The downloads can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
