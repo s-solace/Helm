@@ -5,8 +5,9 @@ Helm is an all-in one productivity management application built for the Windows 
 
 ## **Installation**
 To install this application on a Windows 10+ device, run the "**Helm Installer.exe**" located in the main project files (not in any folder).
-**IMPORTANT** As I was unable to authenticate my digital signature, you will need to disable your antivirus in order to run the installer.
-This application was built on the .NET 7.0 framework, which you may need to install. The downloads can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
+
+- **IMPORTANT** As I was unable to authenticate my digital signature, you will need to disable your antivirus in order to run the installer.
+- This application was built on the .NET 7.0 framework, which you may need to install. The downloads can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 ### Key Features
 
