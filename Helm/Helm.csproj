@@ -10,12 +10,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\notification.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="hlm.ico" />
+    <Content Include="Images\notification.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
   <ItemGroup>

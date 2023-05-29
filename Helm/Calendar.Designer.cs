@@ -305,6 +305,7 @@
             button34.Size = new Size(97, 81);
             button34.TabIndex = 5;
             button34.UseVisualStyleBackColor = true;
+            button34.Click += button34_Click;
             // 
             // button35
             // 
@@ -314,6 +315,7 @@
             button35.Size = new Size(97, 81);
             button35.TabIndex = 8;
             button35.UseVisualStyleBackColor = true;
+            button35.Click += button35_Click;
             // 
             // button36
             // 
@@ -323,6 +325,7 @@
             button36.Size = new Size(97, 81);
             button36.TabIndex = 6;
             button36.UseVisualStyleBackColor = true;
+            button36.Click += button36_Click;
             // 
             // button37
             // 
@@ -332,6 +335,7 @@
             button37.Size = new Size(97, 81);
             button37.TabIndex = 7;
             button37.UseVisualStyleBackColor = true;
+            button37.Click += button37_Click;
             // 
             // panel11
             // 
@@ -406,6 +410,7 @@
             button25.Size = new Size(97, 81);
             button25.TabIndex = 11;
             button25.UseVisualStyleBackColor = true;
+            button25.Click += button25_Click;
             // 
             // button26
             // 
@@ -415,6 +420,7 @@
             button26.Size = new Size(97, 81);
             button26.TabIndex = 10;
             button26.UseVisualStyleBackColor = true;
+            button26.Click += button26_Click;
             // 
             // button27
             // 
@@ -424,6 +430,7 @@
             button27.Size = new Size(97, 81);
             button27.TabIndex = 9;
             button27.UseVisualStyleBackColor = true;
+            button27.Click += button27_Click;
             // 
             // button28
             // 
@@ -433,6 +440,7 @@
             button28.Size = new Size(97, 81);
             button28.TabIndex = 5;
             button28.UseVisualStyleBackColor = true;
+            button28.Click += button28_Click;
             // 
             // button29
             // 
@@ -442,6 +450,7 @@
             button29.Size = new Size(97, 81);
             button29.TabIndex = 8;
             button29.UseVisualStyleBackColor = true;
+            button29.Click += button29_Click;
             // 
             // button30
             // 
@@ -451,6 +460,7 @@
             button30.Size = new Size(97, 81);
             button30.TabIndex = 6;
             button30.UseVisualStyleBackColor = true;
+            button30.Click += button30_Click;
             // 
             // button31
             // 
@@ -460,6 +470,7 @@
             button31.Size = new Size(97, 81);
             button31.TabIndex = 7;
             button31.UseVisualStyleBackColor = true;
+            button31.Click += button31_Click;
             // 
             // panel9
             // 
@@ -567,6 +578,7 @@
             button18.Size = new Size(97, 81);
             button18.TabIndex = 11;
             button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
             // 
             // button19
             // 
@@ -576,6 +588,7 @@
             button19.Size = new Size(97, 81);
             button19.TabIndex = 10;
             button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
             // 
             // button20
             // 
@@ -585,6 +598,7 @@
             button20.Size = new Size(97, 81);
             button20.TabIndex = 9;
             button20.UseVisualStyleBackColor = true;
+            button20.Click += button20_Click;
             // 
             // button21
             // 
@@ -594,6 +608,7 @@
             button21.Size = new Size(97, 81);
             button21.TabIndex = 5;
             button21.UseVisualStyleBackColor = true;
+            button21.Click += button21_Click;
             // 
             // button22
             // 
@@ -603,6 +618,7 @@
             button22.Size = new Size(97, 81);
             button22.TabIndex = 8;
             button22.UseVisualStyleBackColor = true;
+            button22.Click += button22_Click;
             // 
             // button23
             // 
@@ -612,6 +628,7 @@
             button23.Size = new Size(97, 81);
             button23.TabIndex = 6;
             button23.UseVisualStyleBackColor = true;
+            button23.Click += button23_Click;
             // 
             // button24
             // 
@@ -621,6 +638,7 @@
             button24.Size = new Size(97, 81);
             button24.TabIndex = 7;
             button24.UseVisualStyleBackColor = true;
+            button24.Click += button24_Click;
             // 
             // panel7
             // 
@@ -728,6 +746,7 @@
             button11.Size = new Size(97, 81);
             button11.TabIndex = 11;
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button12
             // 
@@ -737,6 +756,7 @@
             button12.Size = new Size(97, 81);
             button12.TabIndex = 10;
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -746,6 +766,7 @@
             button13.Size = new Size(97, 81);
             button13.TabIndex = 9;
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // button14
             // 
@@ -755,6 +776,7 @@
             button14.Size = new Size(97, 81);
             button14.TabIndex = 5;
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // button15
             // 
@@ -764,6 +786,7 @@
             button15.Size = new Size(97, 81);
             button15.TabIndex = 8;
             button15.UseVisualStyleBackColor = true;
+            button15.Click += button15_Click;
             // 
             // button16
             // 
@@ -773,6 +796,7 @@
             button16.Size = new Size(97, 81);
             button16.TabIndex = 6;
             button16.UseVisualStyleBackColor = true;
+            button16.Click += button16_Click;
             // 
             // button17
             // 
@@ -782,6 +806,7 @@
             button17.Size = new Size(97, 81);
             button17.TabIndex = 7;
             button17.UseVisualStyleBackColor = true;
+            button17.Click += button17_Click;
             // 
             // panel5
             // 
@@ -888,6 +913,7 @@
             button7.Size = new Size(97, 81);
             button7.TabIndex = 10;
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
@@ -897,6 +923,7 @@
             button6.Size = new Size(97, 81);
             button6.TabIndex = 9;
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button3
             // 
@@ -906,6 +933,7 @@
             button3.Size = new Size(97, 81);
             button3.TabIndex = 7;
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button5
             // 
@@ -915,6 +943,7 @@
             button5.Size = new Size(97, 81);
             button5.TabIndex = 8;
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button4
             // 
@@ -924,6 +953,7 @@
             button4.Size = new Size(97, 81);
             button4.TabIndex = 7;
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // may1button
             // 

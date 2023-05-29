@@ -25,7 +25,7 @@ namespace Helm
 
         private void createReminderButton_Click(object sender, EventArgs e)
         {
-            Reminders remindersForm = new Reminders();
+            Reminders remindersForm = new Reminders(this);
 
             remindersForm.Show();
         }

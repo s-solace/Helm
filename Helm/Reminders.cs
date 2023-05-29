@@ -5,9 +5,13 @@ namespace Helm
     {
 
         Calendar openCalendarForm = FormHelper.GetOpenForm<Calendar>();
+        BaseDayForm baseDayForm;
 
-        public Reminders()
+
+        public Reminders(BaseDayForm b)
         {
+            baseDayForm = b;
+
             InitializeComponent();
         }
 
@@ -26,14 +30,28 @@ namespace Helm
 
         private void setReminderButton_Click(object sender, EventArgs e)
         {
-
             string msg = reminderNameEntry.Text;
+            string tim;
+            
+            if (reminderTimePicker.Checked)
+            {
+                tim = reminderTimePicker.Text.Split(" ")[1];
+            }
+            else
+            {
+                tim = "None Set";
+            }
+
+            baseDayForm.remindersListBox.Items.Add(msg);
+            baseDayForm.timeListBox.Items.Add(tim);
+
             openCalendarForm.startTimer(reminderTimePicker, reminderDatePicker, msg);
 
 
+            string iconPath = System.IO.Path.Combine(Application.StartupPath, "Images", "notification.ico");
 
             // mainNotifyIcon.Icon = new Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
-            notifyIcon1.Icon = new Icon(Path.GetFullPath("C:\\Users\\Akarsh\\source\\repos\\Helm\\Helm\\Images\\notification.ico"));
+            notifyIcon1.Icon = new Icon(iconPath);
             notifyIcon1.Text = "";
             notifyIcon1.Visible = true;
             notifyIcon1.BalloonTipTitle = "Reminder has been set!";

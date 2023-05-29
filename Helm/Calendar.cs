@@ -1,4 +1,3 @@
-using Newtonsoft.Json;
 using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Windows.Forms;
@@ -28,9 +27,9 @@ namespace Helm
         {
 
             #region JSON Dictionary
-            string json = JsonConvert.SerializeObject(dayDictionary);
+            /*string json = JsonConvert.SerializeObject(dayDictionary);
             Properties.Settings.Default.MyStringDictionary = json;
-            Properties.Settings.Default.Save();
+            Properties.Settings.Default.Save();*/
             #endregion
 
             #region JSON -> string dict
@@ -43,8 +42,10 @@ namespace Helm
 
             InitializeComponent();
 
+            string iconPath = System.IO.Path.Combine(Application.StartupPath, "Images", "notification.ico");
+
             // mainNotifyIcon.Icon = new Icon(Path.GetFullPath("C:\\Users\\Harry\\source\\repos\\s-solace\\Helm\\Helm\\Helm\\Images\\notification.ico"));
-            mainNotifyIcon.Icon = new Icon(Path.GetFullPath("C:\\Users\\Akarsh\\source\\repos\\Helm\\Helm\\Images\\notification.ico"));
+            mainNotifyIcon.Icon = new Icon(iconPath);
             mainNotifyIcon.Text = "";
             mainNotifyIcon.Visible = true;
 
@@ -52,13 +53,6 @@ namespace Helm
 
         private static void Calendar_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void may1button_Click(object sender, EventArgs e)
-        {
-            var baseDayForm = new BaseDayForm();
-            baseDayForm.Show();
 
         }
 
@@ -131,5 +125,194 @@ namespace Helm
         {
 
         }
+
+        #region Calendar Buttons
+
+        private void may1button_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button16_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button17_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button21_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button23_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button24_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button20_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button19_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button18_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button28_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button30_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button29_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button31_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button27_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button26_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button25_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button35_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+
+        private void button37_Click(object sender, EventArgs e)
+        {
+            var baseDayForm = new BaseDayForm();
+            baseDayForm.Show();
+        }
+        #endregion
     }
 }

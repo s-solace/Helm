@@ -346,9 +346,9 @@
         private TextBox p2Text;
         private TableLayoutPanel tableLayoutPanel1;
         private Label remindersLabel;
-        private ListBox timeListBox;
+        public ListBox timeListBox;
         private Label timeLabel;
-        private ListBox remindersListBox;
+        public ListBox remindersListBox;
         private Button createReminderButton;
     }
 }
