@@ -4,12 +4,12 @@
 Helm is an all-in one productivity management application built for the Windows OS. This application is built with students as the target audience. Days are sorted by periods, rather than hours, allowing students to more accurately and efficiently plan out their days.
 
 ## **Installation**
-Follow this [link to download the installer](), or run the "Helm Installer.exe" located in the project files.
+To install this application on a Windows 10+ device, run the "Helm Installer.exe" located in the main project files (not in any folder).
 **IMPORTANT** As I was unable to authenticate my digital signature, you will need to disable your antivirus in order to run the installer.
 
 ### Key Features
 
-There are a variety of features to enable students to maximize their efficiency:
+There are a variety of unique and customizable features to enable students to maximize their efficiency:
 
   1. **Reminders** - The application includes a reminder system which allows the user to create reminders. The user will enter what they want to be reminded about, along with the time and date, and the program will send a windows notification at the given time.
   2. **Notes** - The app additionally includes a note-taking system. Users can write down notes with a title and its content, and it will save to be kept for the future.
