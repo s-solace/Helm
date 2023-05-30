@@ -8,7 +8,7 @@ To install this application on a Windows 10+ device, run the "**[Helm Installer.
 #### If you have downloaded this project as a .zip folder, then everything should be set up already. Just run "Helm.exe" once you have extracted the files.
 
 - **IMPORTANT**: As I was unable to authenticate my digital signature, you will need to disable your antivirus in order to run the installer.
-- This application was built on the .NET 7.0 framework, which you may need to install the runtime. The downloads can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
+- This application was built on the .NET 7.0 framework, which may result in needing to install the runtime. The downloads can be found [here](https://dotnet.microsoft.com/en-us/download/dotnet/7.0).
 
 ### Key Features
 
